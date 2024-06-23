@@ -14,7 +14,7 @@ type variantTypes =
 
 function Navigation() {
   return (
-    <div className="flex w-screen items-center border border-black border-b-outlineglobal py-3 px-4 mb-10">
+    <div className="flex w-screen items-center border border-black border-b-borderLight py-3 px-4 mb-10 bg-black">
       <div className="flex-1 calsans font-bold tracking-widestForLogo">
         ALPHABET.ANALYTIX
       </div>

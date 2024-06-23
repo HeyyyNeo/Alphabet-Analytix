@@ -51,7 +51,7 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        outlineglobal: "#1c1d1e",
+        borderLight: "#1c1d1e",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -88,6 +88,9 @@ module.exports = {
       },
       letterSpacing: {
         widestForLogo: "0.5rem",
+      },
+      rotate: {
+        90: "90deg",
       },
       keyframes: {
         "accordion-down": {

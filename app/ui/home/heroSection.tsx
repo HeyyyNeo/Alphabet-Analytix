@@ -2,7 +2,7 @@ import { heroSection } from "@/app/utils/home/heroSection";
 
 function HeroSection() {
   return (
-    <div className="p-10">
+    <div className="p-10 max-w-xl">
       <h1 className="font-black lg:text-7xl aspekta text-7xl">
         {heroSection.heading}
       </h1>
