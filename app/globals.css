@@ -3,6 +3,13 @@
   @tailwind utilities;
 
   @layer base {
+    .aspekta {
+      font-family: 'Aspekta';
+    }
+    .calsans {
+      font-family: 'Calsans';
+    }
+
     :root {
       --background: 0 0% 100%;
       --foreground: 240 10% 3.9%;
@@ -10,7 +17,6 @@
       --card: 0 0% 100%;
       --card-foreground: 240 10% 3.9%;
 
-      --popover: 0 0% 100%;
       --popover-foreground: 240 10% 3.9%;
 
       --primary: 240 5.9% 10%;
@@ -70,7 +76,33 @@
     * {
       @apply border-border;
     }
+    @font-face {
+      font-family: 'Calsans';
+      src: url('../app/styles/fonts/webfonts/calsans/CalSans-SemiBold.ttf');
+    }
+    @font-face {
+      font-family: 'Aspekta';
+      font-weight: 400;
+      src: url('../app/styles/fonts/webfonts/aspekta/ttf/Aspekta-400.ttf');
+    }
+    @font-face {
+      font-family: 'Aspekta';
+      font-weight: 600;
+      src: url('../app/styles/fonts/webfonts/aspekta/ttf/Aspekta-600.ttf');
+    }
+    @font-face {
+      font-family: 'Aspekta';
+      font-weight: 800;
+      src: url('../app/styles/fonts/webfonts/aspekta/ttf/Aspekta-800.ttf');
+    }
+    @font-face {
+      font-family: 'Aspekta';
+      font-weight: 900;
+      src: url('../app/styles/fonts/webfonts/aspekta/ttf/Aspekta-1000.ttf');
+    }
     body {
       @apply bg-background text-foreground;
+
+      color: white;
     }
   }
