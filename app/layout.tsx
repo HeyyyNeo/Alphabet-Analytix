@@ -1,8 +1,6 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import WithThemeLayout from "./theme";
 
 export const metadata: Metadata = {
   title: "Alphabet Analytics",
@@ -16,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="dark">{children}</body>
+      <body className="root">
+        <WithThemeLayout>{children}</WithThemeLayout>
+      </body>
     </html>
   );
 }

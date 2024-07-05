@@ -19,7 +19,6 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/general/*": ["./app/components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/ui/home/navigation.tsx"],

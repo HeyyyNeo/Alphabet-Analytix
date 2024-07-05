@@ -1,6 +1,6 @@
 import Navigation from "@/app/ui/home/navigation";
 import HeroSection from "@/app/ui/home/heroSection";
-import SpiderSquareWeb from "./components/spiderSquareWeb";
+import SpiderSquareWeb from "@/src/general/spiderSquareWeb";
 
 function Home() {
   return (

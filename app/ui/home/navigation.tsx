@@ -1,5 +1,6 @@
-import { navigationUIItems } from "@/app/utils/home/navigationBar";
+import { navigationUIItems } from "@/src/utils/home/navigationBar";
 import { Button } from "@/components/ui/button";
+import ThemeIcons from "@/src/general/themeIcons";
 
 type variantTypes =
   | "default"
@@ -14,7 +15,7 @@ type variantTypes =
 
 function Navigation() {
   return (
-    <div className="flex w-screen items-center border border-black border-b-borderLight py-3 px-4 mb-10 bg-black">
+    <div className="flex w-screen items-center py-3 px-4 mb-10">
       <div className="flex-1 calsans font-bold tracking-widestForLogo">
         ALPHABET.ANALYTIX
       </div>
@@ -33,12 +34,13 @@ function Navigation() {
               // @ts-ignore
               variant={variant}
               key={`${heading}-nav`}
-              className={`${additionalClasses.join(" ")}`}
+              className={`${additionalClasses.join(" ")} dark:border-cyan`}
             >
               {heading}
             </Button>
           )
         )}
+        <ThemeIcons />
       </div>
     </div>
   );

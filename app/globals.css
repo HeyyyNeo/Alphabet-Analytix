@@ -78,31 +78,29 @@
     }
     @font-face {
       font-family: 'Calsans';
-      src: url('../app/styles/fonts/webfonts/calsans/CalSans-SemiBold.ttf');
+      src: url('../src/styles/fonts/webfonts/calsans/CalSans-SemiBold.ttf');
     }
     @font-face {
       font-family: 'Aspekta';
       font-weight: 400;
-      src: url('../app/styles/fonts/webfonts/aspekta/ttf/Aspekta-400.ttf');
+      src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-400.ttf');
     }
     @font-face {
       font-family: 'Aspekta';
       font-weight: 600;
-      src: url('../app/styles/fonts/webfonts/aspekta/ttf/Aspekta-600.ttf');
+      src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-600.ttf');
     }
     @font-face {
       font-family: 'Aspekta';
       font-weight: 800;
-      src: url('../app/styles/fonts/webfonts/aspekta/ttf/Aspekta-800.ttf');
+      src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-800.ttf');
     }
     @font-face {
       font-family: 'Aspekta';
       font-weight: 900;
-      src: url('../app/styles/fonts/webfonts/aspekta/ttf/Aspekta-1000.ttf');
+      src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-1000.ttf');
     }
     body {
       @apply bg-background text-foreground;
-
-      color: white;
     }
   }
