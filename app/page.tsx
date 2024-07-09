@@ -1,6 +1,8 @@
+import SpiderSquareWeb from "@/src/general/spiderSquareWeb";
 import Navigation from "@/app/ui/home/navigation";
 import HeroSection from "@/app/ui/home/heroSection";
-import SpiderSquareWeb from "@/src/general/spiderSquareWeb";
+import DetailedOfferings from "@/app/ui/home/offerings";
+import Reviews from "./ui/home/reviews";
 
 function Home() {
   return (
@@ -8,6 +10,8 @@ function Home() {
       <Navigation />
       <SpiderSquareWeb />
       <HeroSection />
+      <DetailedOfferings />
+      <Reviews />
     </div>
   );
 }

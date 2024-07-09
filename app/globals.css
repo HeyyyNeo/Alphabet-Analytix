@@ -82,8 +82,28 @@
     }
     @font-face {
       font-family: 'Aspekta';
+      font-weight: 100;
+      src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-100.ttf');
+    }
+    @font-face {
+      font-family: 'Aspekta';
+      font-weight: 200;
+      src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-200.ttf');
+    }
+    @font-face {
+      font-family: 'Aspekta';
+      font-weight: 300;
+      src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-300.ttf');
+    }
+    @font-face {
+      font-family: 'Aspekta';
       font-weight: 400;
       src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-400.ttf');
+    }
+    @font-face {
+      font-family: 'Aspekta';
+      font-weight: 500;
+      src: url('../src/styles/fonts/webfonts/aspekta/ttf/Aspekta-500.ttf');
     }
     @font-face {
       font-family: 'Aspekta';

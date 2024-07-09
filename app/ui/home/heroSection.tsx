@@ -9,7 +9,7 @@ function HeroSection() {
       <h1 className="font-black lg:text-7xl text-5xl aspekta text-center">
         {heroSection.heading}
       </h1>
-      <div className="flex justify-center">
+      <div className="flex justify-center animate-pulse">
         {/* @ts-ignore */}
         {[...heroSection.subHeading].map((char: string, index: any) => (
           <h1
@@ -24,7 +24,7 @@ function HeroSection() {
         {heroSection.thirdFoldHeading}
       </h1>
       <div className="flex justify-center">
-        <p className="text-center text-gray m-5 text-lg max-w-4xl">
+        <p className="text-center text-gray m-5 text-lg max-w-5xl font-thin">
           {offeringsSummary}
         </p>
       </div>

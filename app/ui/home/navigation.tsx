@@ -1,6 +1,7 @@
 import { navigationUIItems } from "@/src/utils/home/navigationBar";
 import { Button } from "@/components/ui/button";
 import ThemeIcons from "@/src/general/themeIcons";
+import Pulse from "@/src/general/pulse";
 
 type variantTypes =
   | "default"
@@ -24,9 +25,11 @@ function Navigation() {
           ({
             heading,
             variant,
+            pulse,
             additionalClasses,
           }: {
             heading: string;
+            pulse?: Boolean;
             variant: variantTypes;
             additionalClasses: string[];
           }) => (
@@ -34,9 +37,11 @@ function Navigation() {
               // @ts-ignore
               variant={variant}
               key={`${heading}-nav`}
-              className={`${additionalClasses.join(" ")} dark:border-cyan`}
+              href="/["
+              className={`${additionalClasses.join(" ")} dark:border-cyan relative`}
             >
               {heading}
+              {pulse && <Pulse />}
             </Button>
           )
         )}

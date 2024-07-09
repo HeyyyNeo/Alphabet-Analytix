@@ -7,6 +7,7 @@ export const navigationUIItems = [
   {
     heading: "Pricing",
     variant: "outline",
+    pulse: true,
     additionalClasses: [""],
   },
   {
