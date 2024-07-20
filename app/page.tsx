@@ -11,7 +11,6 @@ function Home() {
       <SpiderSquareWeb />
       <HeroSection />
       <DetailedOfferings />
-      <Reviews />
     </div>
   );
 }

@@ -29,7 +29,7 @@ export const offeringsSummary = `
 
 export const detailedOfferings = [
   {
-    heading: "Quiz curriculum for Students.",
+    heading: "AI Powered Virtual PTM",
     teacherIcon: "",
     solutionText: `Discover an innovative SaaS solution tailored to enhance your learning experience. 
     Our platform automates quiz generation, providing you with interactive assessments that adapt to your learning needs. 
@@ -38,7 +38,7 @@ export const detailedOfferings = [
     studentIcon: "",
   },
   {
-    heading: "Workbook construction for Students.",
+    heading: "AI assistance for Workbook/Worksheets preparation",
     teacherIcon: "",
     solutionText: `Experience a cutting-edge SaaS platform tailored to digitally construct workbooks aligned with your curriculum. 
       Our intuitive tools empower educators to seamlessly create personalized learning materials that precisely match student needs. 
@@ -48,7 +48,7 @@ export const detailedOfferings = [
     studentIcon: "",
   },
   {
-    heading: "PPT Automation for teachers.",
+    heading: "PPT Automation for teachers",
     teacherIcon: "",
     solutionText: `
       SaaS platform tailored for educators seeking to create captivating PowerPoint presentations effortlessly. 
@@ -58,7 +58,7 @@ export const detailedOfferings = [
     studentIcon: "",
   },
   {
-    heading: "AI powered Personalised Report cards for Students.",
+    heading: "AI powered Personalised Report cards for Students",
     teacherIcon: "",
     solutionText: `
       AI-powered platform that transforms traditional report card generation using advanced Language Models (LLMs).
@@ -70,7 +70,44 @@ export const detailedOfferings = [
 ];
 
 export const reviews = {
-  heading: "Trusted by 100+ Teachers all over india",
-  byTeachers: [{}],
-  bySchools: [{}],
+  heading: "Trusted by School Teachers all over india",
+  byTeachers: [
+    {
+      bio: {
+        name: "Neetu Verma",
+        schoolName: "Delhi Public School",
+      },
+      content: `The seamless integration of framer-motion, tailwind CSS, and shadcn showcases a masterclass in UI design. 🚀 Kudos to @mannupaaji for creating such an innovative and inspirational resource for devs! #UI #nextjs`,
+    },
+    {
+      bio: {
+        name: "Ritu Singh",
+        schoolName: "Delhi International School",
+      },
+      content: `The seamless integration of framer-motion, tailwind CSS, and shadcn showcases a masterclass in UI design. 🚀 Kudos to @mannupaaji for creating such an innovative and inspirational resource for devs! #UI #nextjs`,
+    },
+    {
+      bio: {
+        name: "Neetu Verma",
+        schoolName: "The Lawrence Public School",
+      },
+      content: `The seamless integration of framer-motion, tailwind CSS, and shadcn showcases a masterclass in UI design. 🚀 Kudos to @mannupaaji for creating such an innovative and inspirational resource for devs! #UI #nextjs`,
+    },
+    {
+      bio: {
+        name: "Neetu Verma",
+        schoolName: "",
+      },
+      content: `The seamless integration of framer-motion, tailwind CSS, and shadcn showcases a masterclass in UI design. 🚀 Kudos to @mannupaaji for creating such an innovative and inspirational resource for devs! #UI #nextjs`,
+    },
+  ],
+  bySchools: [
+    {
+      bio: {
+        name: "Neetu Verma",
+        schoolName: "",
+      },
+      content: `The seamless integration of framer-motion, tailwind CSS, and shadcn showcases a masterclass in UI design. 🚀 Kudos to @mannupaaji for creating such an innovative and inspirational resource for devs! #UI #nextjs`,
+    },
+  ],
 };

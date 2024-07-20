@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import { Moon, Sun, LucideSettings } from "lucide-react";
+import { Moon, Sun, SunMoon } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -24,7 +24,7 @@ function ThemeIcons() {
       >
         <Button variant="outline">
           {" "}
-          <LucideSettings className="h-4 w-4" />
+          <SunMoon className="h-6 w-6" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 bg-white dark:bg-black">
