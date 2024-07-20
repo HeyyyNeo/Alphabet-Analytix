@@ -45,7 +45,7 @@ function HeroSection() {
               {tierInfo.description?.map((info: string, index: number) => (
                 <div className="flex">
                   <span>
-                    <CircleCheck className="text-white h-4 w-4 mr-2 mt-3 rounded-full dark:text-gray text-black" />
+                    <CircleCheck className="h-4 w-4 mr-2 mt-3 rounded-full dark:text-gray text-black" />
                   </span>
                   <span className="my-2.5 aspekta font-normal text-md dark:text-coolgray text-black">
                     {info}
