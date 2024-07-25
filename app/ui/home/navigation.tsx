@@ -2,7 +2,8 @@ import { navigationUIItems } from "@/src/utils/home/navigationBar";
 import { Button } from "@/components/ui/button";
 import ThemeIcons from "@/src/general/themeIcons";
 import Pulse from "@/src/general/pulse";
-import { Link } from "@radix-ui/react-navigation-menu";
+import DrawerWithTriggerAndContent from "@/src/general/drawerWithContent";
+import AuthComponent from "@/src/auth";
 
 type variantTypes =
   | "default"
@@ -28,24 +29,35 @@ function Navigation() {
             variant,
             pulse,
             href,
+            isDrawer,
             additionalClasses,
           }: {
             heading: string;
             pulse?: Boolean;
             href?: string;
             variant: variantTypes;
+            isDrawer?: Boolean;
             additionalClasses: string[];
           }) => (
-            <Button
-              // @ts-ignore
-              variant={variant}
-              key={`${heading}-nav`}
-              className={`${additionalClasses.join(" ")} dark:border-cyan relative`}
-            >
-              {!href && heading}
-              {href && <a href={href}>{heading}</a>}
-              {pulse && <Pulse />}
-            </Button>
+            <>
+              {!isDrawer && (
+                <Button
+                  // @ts-ignore
+                  variant={variant}
+                  key={`${heading}-nav`}
+                  className={`${additionalClasses.join(" ")} dark:border-cyan relative`}
+                >
+                  {!href && heading}
+                  {href && <a href={href}>{heading}</a>}
+                  {pulse && <Pulse />}
+                </Button>
+              )}
+              {isDrawer && (
+                <DrawerWithTriggerAndContent trigger={"Login"}>
+                  <AuthComponent />
+                </DrawerWithTriggerAndContent>
+              )}
+            </>
           )
         )}
         <ThemeIcons />

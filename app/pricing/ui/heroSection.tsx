@@ -22,13 +22,19 @@ function HeroSection() {
       <CompanyLogo />
       <div className="flex grid md:grid-cols-3 gap-10 w-screen max-w-screen-xl my-10 px-5 md:px-0">
         {pricingTiers.map((tierInfo: tierInfoProp, index: number) => (
-          <Card className="w-xl shadow-md flex flex-col">
+          <Card className="w-xl shadow-md flex flex-col" key={tierInfo.heading}>
             <CardHeader className="text-2xl font-normal calsans">
               {tierInfo.heading}
               <hr className="w-10 bg-teal" style={{ padding: "0.5px" }} />
             </CardHeader>
-            <CardContent className="text-sm font-thin aspekta">
-              <div className="font-bold text-2xl mb-5 flex">
+            <CardContent
+              className="text-sm font-thin aspekta"
+              key={`${tierInfo.heading}-heading`}
+            >
+              <div
+                className="font-bold text-2xl mb-5 flex"
+                key={`${tierInfo.heading}-heading`}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 320 512"
@@ -43,7 +49,7 @@ function HeroSection() {
                 {tierInfo.pricing}
               </div>
               {tierInfo.description?.map((info: string, index: number) => (
-                <div className="flex">
+                <div className="flex" key={info}>
                   <span>
                     <CircleCheck className="h-4 w-4 mr-2 mt-3 rounded-full dark:text-gray text-black" />
                   </span>

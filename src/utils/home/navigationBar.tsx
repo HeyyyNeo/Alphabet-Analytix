@@ -15,7 +15,7 @@ export const navigationUIItems = [
   {
     heading: "Login",
     variant: "default",
-    href: "/login",
+    isDrawer: true,
     additionalClasses: ["", "px-4"],
   },
 ];
