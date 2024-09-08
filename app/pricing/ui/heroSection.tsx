@@ -6,8 +6,10 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import CompanyLogo from "@/src/general/logo";
+import { contactEmail } from "@/src/utils/home/navigationBar";
 import { pricingTiers } from "@/src/utils/pricing/details";
 import { CircleCheck } from "lucide-react";
+import Link from "next/link";
 
 type tierInfoProp = {
   heading: string;
@@ -61,10 +63,22 @@ function HeroSection() {
             </CardContent>
             <CardFooter className="basis-full">
               <Button
+                asChild
                 variant={"outline"}
-                className="mt-auto basis-full bg-violet text-white"
+                className="mt-auto basis-full flex-none mr-2 pointer"
               >
-                Buy Now
+                <Link href={contactEmail} target="_blank">
+                  Contact Us
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant={"outline"}
+                className="mt-auto basis-full bg-purple text-white flex-auto"
+              >
+                <Link href="/demo/teacher" target="_blank">
+                  View Demo
+                </Link>
               </Button>
             </CardFooter>
           </Card>

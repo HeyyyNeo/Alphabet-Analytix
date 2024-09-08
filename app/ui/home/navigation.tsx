@@ -16,7 +16,11 @@ type variantTypes =
   | undefined
   | string;
 
-function Navigation() {
+type excludeConfig = {
+  [key: string]: boolean;
+};
+
+function Navigation({ excludeConfig }: { excludeConfig?: excludeConfig }) {
   return (
     <div className="flex w-screen items-center py-3 px-4 mb-5">
       <div className="hidden flex-1 calsans font-bold tracking-widestForLogo md:block">
@@ -40,7 +44,7 @@ function Navigation() {
             additionalClasses: string[];
           }) => (
             <>
-              {!isDrawer && (
+              {!isDrawer && !excludeConfig?.[heading] && (
                 <Button
                   // @ts-ignore
                   variant={variant}

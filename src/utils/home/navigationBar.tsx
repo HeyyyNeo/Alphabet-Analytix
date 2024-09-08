@@ -1,8 +1,11 @@
+export const founderEmail = "shubhamchaudhary010259@gmail.com";
+export const contactEmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${founderEmail}`;
+
 export const navigationUIItems = [
   {
-    heading: "Contact",
+    heading: "Contact Us",
     variant: "ghost",
-    href: "/contact",
+    href: ``,
     additionalClasses: [""],
   },
   {
